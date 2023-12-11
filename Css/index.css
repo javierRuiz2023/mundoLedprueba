@@ -1,0 +1,1148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* fuente: Montserrat,sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* iconos del footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  h1{
+    font-size: 1.3em;
+    font-weight: normal
+    
+  }
+
+  img{
+    max-width: 100%;
+  }
+  button{
+    margin: 55px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0, 0, 0.5);
+    color: white;
+    background-color: rgb(6, 158, 19);
+    transition: all 300ms;
+  }
+    
+
+button:hover{
+    background: white;
+    color: black;
+    
+}
+
+    
+   
+  /* h2{font-size: 2.7em;}
+  h3{font-size: 2em;}
+  p{font-size: 1.25em;}  */
+
+  body{
+    background-color: #ffffff;
+   
+  }
+
+
+  a {
+    color: #28343a;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.5;
+    font-weight: 405;
+    transition: 0.3s;
+    
+  }
+    
+  
+  a:hover {
+    opacity: 0.7;
+    
+  }
+  
+ 
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+  }
+ 
+  .color-acento{color: rgb(6, 158, 19);}
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;;
+    background: #f3f3f3;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 900;
+    
+  }
+  
+
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+  }
+
+  /* primera parte de la seccion hero */ 
+  .banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    animation: banner 40s infinite linear;
+    transition: all .1s ease-in-out;
+    background-image: url("../media/hero1.jpg");
+}
+.banner-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,22,40,.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-content h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 3em;
+    text-align:center;
+
+}
+h1{
+  padding-bottom: 30px;
+  font-size: 100px;
+  text-align:center;
+}
+.banner-content a{
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 20px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+
+.banner-content a:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+@keyframes banner{
+    0%{
+        background-image: url("../media/hero1.jpg");
+    }
+
+    25%{
+        background-image: url("../media/hero1.jpg");
+    }
+
+    26%{
+        background-image: url("../media/hero2.jpg");
+    }
+    50%{
+        background-image: url("../media/hero2.jpg");
+    }
+
+    51%{
+        background-image: url("../media/hero6.jpg");
+    }
+
+    75%{
+        background-image: url("../media/hero6.jpg");
+    }
+
+    76%{
+        background-image: url("../media/herp7.jpg");
+    }
+
+    100%{
+        background-image: url("../media/herp7.jpg");
+    }
+
+}
+
+/*  
+
+  #hero{
+
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;     
+    flex-direction: column;
+    height: 68vh;
+    color: white;
+    transition: all .1s ease-in-out;
+    
+    animation: img-hero 10s infinite linear;
+    transition: all 300ms;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../media/hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 300ms;
+    
+}
+
+@keyframes img-hero{
+    0%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../img/anime3.jpg");
+    }
+
+    25%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../img/anime3.jpg");
+    }
+
+    26%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../img/salon1.jpg");
+    }
+    
+    50%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../img/salon1.jpg");
+    }
+
+    51%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../media/hero2.jpg");
+    }
+    75%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../media/hero2.jpg");
+    }
+
+    76%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../media/pexels-houzlook-com-3356416.jpg");
+    }
+    100%{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../media/pexels-houzlook-com-3356416.jpg");
+    }
+} */
+
+/* seccion de productos */
+.contenido1 .titulo1{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 50PX;
+  text-transform: uppercase;
+  
+  
+}
+.contenido{
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  
+}
+ 
+
+.mostrador{
+  margin-top: 45PX;
+  width: 100%;
+  transition: .5s ease;
+  
+}
+
+.mostrador .fila{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  
+}
+ 
+.mostrador .fila .item{
+  max-width: 210px;
+  padding: 30px;
+  height: 250px;
+  text-align: center;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .3s;
+  
+}
+
+
+
+.mostrador .fila .item:hover{
+  background-color: #e6e6e6;
+  scale: 1.1;
+  
+ 
+}
+
+.mostrador .fila .item img{
+  width: 100%;
+  margin: 30px 0;
+}
+
+
+.mostrador .fila .item .description{
+  color: #707070;
+  font-weight: bold;
+}
+
+.mostrador .fila .item .precio{
+  color: rgb(6, 158, 19);
+  font-weight: bold;
+  font-size: 20px;
+}
+/* 
+la seccion de marcas */
+
+.container{
+  display: flex;
+  width: 100%;
+  max-width:  1100px;
+  height: 60vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 300ms;
+  margin: auto;
+  
+}
+
+.container .titulo h1{
+  font-size: 1.5em;
+  text-align: center;
+  
+  /* margin-bottom: 12px; */
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.container .caja img{
+  width: 250px;
+  height: 150px;
+  margin: 50px;
+  padding: 1px;
+  scale: 0.7;
+  transition: all 300ms;
+  
+}
+.container .caja img:hover{
+  scale: 0.8;
+}
+
+/* .container .caja img.ventor{
+  width: 220px;
+  height: 140px;
+  scale: 0.7;
+} */
+/* 
+empezamos con el carrusel */
+
+.efecto-slider{
+  /* 70 */
+  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  
+}
+
+
+.container-all{
+  position: relative;
+  max-width: 10000px;
+  width: 1000000px;
+  height: 60vh;
+  border-radius: 6px;
+  overflow: hidden;
+  object-fit: cover;
+  
+}
+
+.slide{
+  display: flex;
+  transform: translate3d(0,0,0);
+  transition: all 600ms;
+  animation-name: autoplay;
+  animation-duration: 6.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+}
+
+.item-slide{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+  
+}
+
+
+
+.slider-text1{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 250px;
+  color:  white;
+  font-size: 45px;
+  
+}
+  
+ 
+
+.slide .item-slide img{
+  height: 540px;
+  width: 2000px;
+  
+}
+
+
+
+.pagination{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255,255,255,0.5);
+  margin: 0 10px;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.pagination-item:hover {
+  transform: scale(2);
+}
+
+.pagination-item img{
+  display: inline-block;
+  max-width: none;
+  height: 100%;
+  transform: scale(1);
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.pagination-item:hover img{
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide{
+  animation: none;
+  transform: translate3d(0,0,0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+  background: #fff;
+}
+
+
+input[id="2"]:checked ~ .slide{
+  animation: none;
+  transform: translate3d(calc(-100% * 1),0,0);
+}
+
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+  background: #fff;
+}
+
+
+input[id="3"]:checked ~ .slide{
+  animation: none;
+  transform: translate3d(calc(-100% * 2),0,0);
+}
+
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+  background: #fff;
+}
+
+
+@keyframes autoplay{
+  33%{
+    transform: translate3d(calc(-100% * 0), 0, 0);
+  }
+
+  66%{
+    transform: translate3d(calc(-50% * 1), 0, 0);
+  }
+
+  100%{
+    transform: translate3d(calc(-50% * 2), 0, 0);
+
+  }
+}
+
+/* sobre nosotros */
+.sobre-nosotros  .container{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.sobre-nosotros .img-container{
+  background-image:  url("../media/sobre\ nosotros.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 400px;
+  height: 500px;
+  box-shadow: 9px 7px 10px 0px rgba(0,0,0,0.61);
+  -webkit-box-shadow: 9px 7px 10px 0px rgba(0,0,0,0.61);
+  -moz-box-shadow: 9px 7px 10px 0px rgba(0,0,0,0.61);
+
+}
+.sobre-nosotros .texto h2{
+  font-weight:250;
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+.sobre-nosotros .texto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+  width: 40%;
+  text-align: initial;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* lo que hacemos */
+
+.lo-que-hacemos  .container{
+   margin-top: 65px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+.lo-que-hacemos .img-container{
+  background-image:  url("../media/lo-que-hacemos.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 400px;
+  height: 500px;
+
+  box-shadow: 9px 7px 10px 0px rgba(0,0,0,0.61);
+  -webkit-box-shadow: 9px 7px 10px 0px rgba(0,0,0,0.61);
+  -moz-box-shadow: 9px 7px 10px 0px rgba(0,0,0,0.61);
+}
+.lo-que-hacemos .texto h2{
+  font-weight:250;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+.lo-que-hacemos .texto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+  width: 40%;
+  text-align: initial;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Emepezamos con la ubicacion del negocio */
+
+.imagen-fondo{
+  height: 70vh;
+  
+}
+.imagen-fondo .texto{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 35px;
+  display: block;
+}
+
+.imagen-fondo .img-contenedor{
+  background-image: url("../media/fondo\ mapa.jpg");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  background-size:cover;
+  position:absolute;
+  
+}
+
+.caja-texto .texto{
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  position:absolute;
+  z-index: 5;
+  margin-top: 55px;
+}
+.caja-texto .texto p{
+  margin: 45px;
+}
+.mapa {
+  position: absolute;
+  right: 150px;
+  margin-top: 55px;
+  background-color: #e91e63;
+ 
+}
+
+.como-llegar a{
+  width: 150px;
+  height: 100px;
+  border: solid;
+  padding: 5px;
+  display: none;
+}
+  /* seccion del footer */
+  .footer-body{
+    line-height: 1.5;
+	  font-family: 'Poppins', sans-serif;
+    margin:0;
+	  padding:0;
+	  box-sizing: border-box;
+  }
+
+ .container-footer{
+    max-width: 1170px;
+    margin:auto;
+    
+  }
+  .row{
+    display: flex;
+    flex-wrap: nowrap;
+    
+  }
+    
+    
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+    
+      padding: 70px 0;
+  }
+
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+  /* Version para moviles  */
+  /* haciendo la pagina responsive */
+
+@media screen and (max-width:1200px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; 
+  }
+  
+}
+
+
+
+@media screen and (max-width: 720px){
+
+  header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 17vh;
+    display: none;
+  }
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+  }
+  header nav .logo{
+    
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+  }
+
+  /* seccion del hero */
+  .banner-content a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+
+  .banner-content h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 1.8em;
+    text-align:center;
+
+}
+
+  /* seccion de productos */
+
+  .contenido1 .titulo1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 50PX;
+    text-transform: uppercase;
+    
+    
+  }
+  .contenido{
+    max-width: 720px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+   
+  
+  .mostrador{
+    display: flex;
+  
+    
+    transition: .5s ease;
+    
+  }
+  
+  .mostrador .fila{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+  }
+   
+  /* seccion de marcas */
+
+  .container{
+    /* display: flex;
+    width: 100%;
+    max-width:  500px;
+    height: 60vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: red;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     */
+
+     max-width: 720px;
+     width: 100%;
+     margin: 40px auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  
+  .container .titulo h1{
+    font-size: 1.5em;
+    text-align: center;
+    
+    /* margin-bottom: 12px; */
+    margin-top: 1px;
+    text-transform: uppercase;
+  }
+ 
+  .container .caja img{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    margin: 5px;
+    padding: 1px;
+    scale: 0.9;
+    
+  }
+
+  
+  /* empezamos con el carrucel */
+
+  .efecto-slider{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px;
+    
+  }
+  
+  
+  .container-all{
+    position: relative;
+    max-width: 1000px;
+    width: 100vh;
+    height: 20vh;
+    border-radius: 6px;
+    overflow: hidden;
+    object-fit: cover;
+    
+  }
+  
+  .slide{
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  
+  }
+  
+  .item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    
+  }
+  
+  
+  
+  .slider-text1{
+    width: 100%;
+    height: 120px;
+    
+    background-color: rgba(0,0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    text-align: center;
+    
+    justify-content: center;
+    padding-top: 35px;
+    color:  white;
+    font-size: 30px;
+    
+  }
+    
+   
+  
+  .slide .item-slide img{
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 300px;
+  }
+
+
+  /* sobre nosotros movil*/
+.sobre-nosotros{ 
+  margin-top: 75px;
+  height: 800px;
+
+}
+
+.sobre-nosotros  .container{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  
+}
+
+.sobre-nosotros .img-container{
+  
+  background-image:  url("../media/sobre\ nosotros.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 230px;
+  margin-top: -400px;
+  position:absolute;
+  border-radius: 5px;
+}
+.sobre-nosotros .texto h2{
+  font-weight:250;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.sobre-nosotros .texto{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  text-align: initial;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: -320px;
+} 
+
+  /* Lo que hacemos */
+  .lo-que-hacemos{
+   
+    height: 1000px;
+    margin-top: -200px;
+  }
+  .lo-que-hacemos  .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+    
+ 
+ .lo-que-hacemos .img-container{
+   background-image:  url("../media/lo-que-hacemos.jpg");
+   background-size: cover;
+   background-position: center center;
+   width: 250px;
+   height: 250px;
+   margin-top: -200px;
+   position:absolute;
+  }
+   
+ .lo-que-hacemos .texto h2{
+  font-weight:250;
+  font-size: 35px;
+  padding-bottom: 15px;
+ }
+ .lo-que-hacemos .texto{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  text-align: initial;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: -500px;
+ } 
+
+
+ .mapa{
+  display: none; }
+  .caja-texto .texto{
+    width: 325px;
+    height: 450px;
+    background-color: white;
+    position:absolute;
+   
+    margin-left: 1px;
+  }
+  
+  .caja-texto .texto{
+    width: 100%;
+  }
+  
+  .como-llegar a{
+    position: relative;
+    width: 285px;
+    height: 45px;
+    border: solid;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  /* seccion del footer */
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+ 
+
+}
+@media screen and (max-width: 1144px){
+  .mapa{
+    display: none;
+  }
+}
+
+
